@@ -41,7 +41,7 @@ for i in range(1, n+1):
 """
 
 # Fibonacci_2
-
+"""
 def fibo(f):
     if f == 1 or f == 2:
         return 1
@@ -55,8 +55,17 @@ def fibo(f):
 y = int(input("Fibo:"))
 for i in range(1, y+1):
     print(fibo(i))
+"""
+# Create a function with variable length of arguments
+def multip(*args):
+    result = 1
+    for j in args:
+        result = result * j
+    return result
 
-print("new")
+
+print(multip(2, 3, 2, 5))
+
 
 
 
