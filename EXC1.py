@@ -57,16 +57,34 @@ for i in range(1, y+1):
     print(fibo(i))
 """
 # Create a function with variable length of arguments
+"""
 def multip(*args):
     result = 1
     for j in args:
         result = result * j
     return result
 
-
 print(multip(2, 3, 2, 5))
+"""
 
+# Recursive adding
+"""
+def adding(num):
+    if num:
+        return num + adding(num-1)
+    else:
+        return 0
 
+number = int(input("Number:"))
+print(adding(number))
+"""
+# Convert two lists into a dictionary
+
+keys = ["ten", "twenty", "thirty"]
+values = [10, 20, 30]
+
+d1 = dict(zip(keys, values))
+print(d1)
 
 
 
