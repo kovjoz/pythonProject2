@@ -79,14 +79,27 @@ number = int(input("Number:"))
 print(adding(number))
 """
 # Convert two lists into a dictionary
-
+"""
 keys = ["ten", "twenty", "thirty"]
 values = [10, 20, 30]
 
 d1 = dict(zip(keys, values))
 print(d1)
-
-
+"""
+# Get the key of a minimum value from the following dictionary
+sample_dict = {
+  'Physics': 82,
+  'Math': 65,
+  'history': 75,
+    'IT': 100,
+    'Art': 64
+}
+minval = 1000
+for k, v in sample_dict.items():
+    if v < minval:
+        minval = v
+        key = k
+print(key)
 
 
 
