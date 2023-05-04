@@ -87,6 +87,7 @@ d1 = dict(zip(keys, values))
 print(d1)
 """
 # Get the key of a minimum value from the following dictionary
+"""
 sample_dict = {
   'Physics': 82,
   'Math': 65,
@@ -100,6 +101,16 @@ for k, v in sample_dict.items():
         minval = v
         key = k
 print(key)
+"""
+#
 
+class Vehicle:
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+car1 = Vehicle("Mercedes", 240, 55000)
+print(car1.name, car1.max_speed, car1.mileage)
 
 
