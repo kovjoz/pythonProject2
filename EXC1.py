@@ -105,12 +105,27 @@ print(key)
 #
 
 class Vehicle:
-    def __init__(self, name, max_speed, mileage):
+    def __init__(self, name, mileage, max_speed=150):
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
 
-car1 = Vehicle("Mercedes", 240, 55000)
+class Pickup(Vehicle):
+    pass
+
+class Bus(Vehicle):
+    def __init__(self, name, mileage, max_speed=100, capacity=55):
+        super().__init__(name, mileage, max_speed)
+        self.capacity = capacity
+
+car1 = Vehicle("Mercedes", 55000, 240)
 print(car1.name, car1.max_speed, car1.mileage)
+
+ranger1 = Pickup("FordRanger", 33000)
+print(ranger1.name, ranger1.max_speed, ranger1.mileage)
+
+neo1 = Bus("Neoplan", 600000)
+print(neo1.name, neo1.max_speed, neo1.mileage, neo1.capacity)
+
 
 
